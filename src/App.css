@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  background: #f1f1f1;
+  font-family: "Open Sans";
+}
+
+.MainContainer {
+  margin: 15px;
+}
+
+.PhoneScreenContainer {
+  margin: 15px;
+  padding: 15px;
+}
+
+.PhoneScreen {
+  height: 620px;
+  width: 360px;
+  background: #fff;
+  margin: 15px auto;
+  box-shadow: 0px 0px 60px 3px #d8dee6;
+}
+
+.StatusBar {
+  background: #f0f0f0;
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.StatusBar_Time {
+  color: #606060;
+  font-size: 15px;
+  line-height: 24px;
+  position: relative;
+  top: 2px;
+}
+
+.StatusBar_Item {
+  margin-left: 5px;
+}
+
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.ToolbarLeft div {
+  display: inline-block;
+}
+
+.Toolbar_Backbutton,
+.Toolbar_MoreInfo {
+  padding: 8px 12px;
+}
+
+.Toolbar_Username {
+  font-size: 16px;
+  line-height: 40px;
+  padding: 4px 12px;
+}
+
+.ChatScreen {
+  overflow-y: auto;
+  max-height: 486px;
+  min-height: 486px;
+}
+
+.ChatScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.ChatScreen .Receive {
+  text-align: left;
+}
+
+.ChatScreen .Send {
+  text-align: right;
+}
+
+.ChatItem_Image {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+}
+
+.ChatItem_ImageContainer {
+  display: inline-block;
+  padding: 4px;
+  position: relative;
+  top: 13px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.ChatScreen .ChatItem.Send .ChatItemText {
+  padding: 12px 16px;
+  background: #efefef;
+  display: inline-block;
+  margin: 4px 16px;
+  border-radius: 30px;
+}
+
+.ChatScreen .ChatItem.Receive .ChatItemText {
+  padding: 12px 16px;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  margin: 3px 0px;
+  border-radius: 30px;
+  position: relative;
+  left: 5px;
+  max-width: 60%;
+}
+
+.ChatScreen .ChatItem.Send .ChatItemText.EmoticonesMessage,
+.ChatScreen .ChatItem.Receive .ChatItemText.EmoticonesMessage {
+  background: transparent;
+  border: none;
+  padding: 2px;
+  position: relative;
+  top: 10px;
+  margin-bottom: 15px;
+}
+
+.ChatItemText.EmoticonesMessage img {
+  height: 32px;
+  width: 32px;
+}
+
+.ChatItemText {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.Receive .ChatItem_Nudge {
+  width: 48px;
+  position: relative;
+  height: 48px;
+  top: 3px;
+  left: 5px;
+}
+
+.Send .ChatItem_Nudge {
+  width: 48px;
+  position: relative;
+  height: 48px;
+  top: 12px;
+  right: 10px;
+}
+
+.ChatItem_ImageContainerPlaceholder {
+  display: inline-block;
+  height: 26px;
+  width: 36px;
+  margin-left: 12px;
+}
+
+.Configuration {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Configuration_UserName span {
+  font-size: 14px;
+  text-transform: lowercase;
+  margin-bottom: -12px;
+  display: block;
+}
+
+.Configuration_UserName input {
+  padding: 7px 15px;
+  font-size: 14px;
+}
+
+.ChatScreen_Chatbar_Icon {
+  height: 50px;
+  width: 55px;
+  position: relative;
+  top: 2px;
+}
+
+.ChatScreen_Chatbar {
+  display: flex;
+  height: 56px;
+  background: #fff;
+}
+
+.ChatScreen_Chatbar_Input {
+  border: none;
+  outline: none;
+  width: 75%;
+  position: relative;
+  top: -5px;
+}
+
+.ChatScreen_Chatbar_InputContainer img {
+  height: 25px;
+  position: relative;
+  left: 6px;
+  top: 2px;
+  margin-left: 2px;
+}
+
+.ChatScreen_Chatbar_InputContainerMain {
+  padding: 4px 7px 0px 0px;
+  width: 100%;
+}
+
+.ChatScreen_Chatbar_InputContainer {
+  border: 1px solid #dedede;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.ChatMaker {
+  background: #fff;
+  width: 500px;
+  margin: auto;
+  padding: 15px;
+}
+
+.ToggleSender {
+  display: flex;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  justify-content: space-around;
+}
+
+.ToggleSender_Border {
+  width: 3px;
+  background: #2184f7;
+}
+
+.ChatMakerInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  margin-bottom: 16px;
+  outline: none;
+  background: #f1f1f1;
+}
+
+.ToggleSender_Send {
+  background: #217af5;
+  color: #fff;
+}
+
+.ToggleSender_Send,
+.ToggleSender_Receive {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.ChatScreen_TimeHeader {
+  padding: 8px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: #d3d3d3;
+}
+
+.emoji-picker {
+  width: 100% !important;
+  border: 1px solid #dedede !important;
+  border-radius: 5px !important;
+  margin-bottom: 11px !important;
+}
+
+.Emojicone {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: 4px;
+  margin-left: 4px;
+}
+
+.Configuration_Div {
+  width: 0px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #fff;
+  margin: 60px;
+  padding: 15px;
+  box-shadow: 0 2px 8px 0 rgba(35, 47, 53, 0.09);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ChatConfiguration_FloatingButton {
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  height: 56px;
+  width: 56px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06), 0 2px 32px rgba(0, 0, 0, 0.16) !important;
+}
+
+.ChatConfiguration_FloatingButton_Screenshot {
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  right: 60px;
+  bottom: 0;
+  margin: 30px;
+  height: 56px;
+  width: 56px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06), 0 2px 32px rgba(0, 0, 0, 0.16) !important;
+}
+
+.Configuration_UserName input {
+  padding: 7px 15px;
+  font-size: 14px;
+  background: #f1f1f1;
+  border: none;
+  outline: none;
+  margin: 15px 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
